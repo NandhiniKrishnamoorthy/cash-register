@@ -14,10 +14,14 @@ calculateButton.addEventListener("click", function calculateAmount() {
         debugger;
         let billAmount = Number(totalBill.value);
         let cashGiven = Number(totalCash.value);
-        if (cashGiven >= billAmount) {            
+        if (cashGiven > billAmount) {            
             const remainingAmount = cashGiven - billAmount;
             calculateChangeToReturn(remainingAmount);            
-        } else {
+        }
+        else if (cashGiven === billAmount) {
+            displayMessage("No Cash to return");
+        }
+        else {
             displayMessage("Cash amount should be greater than bill amount");
         }
     }

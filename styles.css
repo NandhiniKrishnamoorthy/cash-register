@@ -1,3 +1,109 @@
-﻿body
-{
+﻿@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+    --primary-color: #60A5FA;
+    --dark-gray: #6b7280;
+    --section-primary-color: #F3F4F6;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin:0px;
+}
+
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;    
+    margin: auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    padding-top: 1rem;    
+    margin: auto;
+}
+
+.container {
+    text-align: center;
+    padding: 1rem;
+}
+
+#bill-amount {    
+    font-size: 14px;
+    outline: #fff;
+    padding: 0.6rem 1rem;
+    margin: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 258px;
+    text-align:center;
+}
+
+.bill{
+    font-size: 1.5rem;
+    font-weight:bold;
+}
+
+.cash{
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+#cash-given {
+    text-align:center;    
+    font-size: 14px;
+    outline: #fff;
+    padding: 0.6rem 1rem;
+    margin: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 258px;
+}
+
+#calculate-button {
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    font-size: large;
+    cursor: pointer;
+    outline: #fff;
+    margin: auto;
+    display: block;
+}
+
+#display-table {
+    width: 50%;
+    text-align: justify;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th,
+td {
+    border: 1px solid black;
+    width: 0%;
+    border-collapse: collapse;
+    padding: 0.4rem;
+}
+
+#no-of-notes{
+    font-weight:bold;
+}
+
+#error-message {
+    display: block;
+    font-size: larger;
+    margin: 2rem 0 1rem 0;
+}
+
+#caption{
+    margin: 1rem 0 1rem 0;
+    font-size:1.5rem;
 }
